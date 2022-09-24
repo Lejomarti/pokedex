@@ -1,0 +1,129 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #f8f1f1;
+    --text-input-field: #f7f7f7;
+    --poke-red: #e24747;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+ body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+    font-weight: 700;
+    background-color: var(--white);
+  }
+  .navbar-izq, .navbar-der{
+    display: flex;
+
+  } 
+  .logo{
+    width: 60px;
+    height: auto;
+    display: flex;
+
+    
+  }
+.navbar-izq ul, 
+.navbar-der li {  
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-izq ul{
+    margin-left: 12px;
+    position: relative;
+}
+
+.navbar-der li{
+    margin-right: 20px;
+}
+
+.navbar-izq ul li a{
+    padding: 8px;
+}
+
+.navbar-der li a {
+  padding: 8px;
+}
+
+.navbar-izq ul li a, 
+.navbar-der li a{
+    border-radius: 8px;
+}
+
+.navbar-izq ul a:hover, 
+.navbar-der li a:hover{
+border: 1px solid var(--poke-red);
+background-color: var(--very-light-pink);
+}
+
+.cards-container{
+display: grid;
+grid-template-columns: repeat(auto-fill, 240px);
+gap: 26px;
+place-content: center;
+margin-top: 20px;
+}
+
+.Pokebox {
+width: 240px;
+height: 350px;
+background: var(--very-light-pink);
+border-radius: 10px;
+display: block;
+}
+
+.Pokebox-sup{
+  width: 100%;
+  height: 240px;
+  background: #ffffff;
+  display: grid;
+}
+.Pokebox-sup-1a{
+  width: 100%;
+  height: 110px;
+  background: red;
+  border-radius: 10px 10px 0 0;
+
+}
+.Pokebox-sup-circle{
+  background-color: white;
+  height: 180px;
+  width: 180px;
+  position: relative;
+  top: -110px;
+  margin: 30px;
+  border-radius: 50%;
+}
+
+.Pokebox-down {
+  display: block;
+  text-align: center;
+  }
+
+.Pokebox-down #pokeId{
+color: red;
+place-content: center;
+font-weight: 800 ;
+margin-top: 20px;
+}
+.Pokebox-down #pokeNombre{
+  color: rgb(0, 0, 0);
+  place-content: center;
+  font-weight: 800 ;
+  margin-top: 5px;
+  }
+
